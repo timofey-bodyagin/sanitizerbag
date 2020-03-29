@@ -1,0 +1,5 @@
+node_modules/
+.vscode/
+.idea/
+assets/build/
+package-lock.json

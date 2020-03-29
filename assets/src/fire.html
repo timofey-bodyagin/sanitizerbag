@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Title</title>
+</head>
+<body>
+<input type="text" value="1" id="x">
+<input type="text" value="1" id="y">
+<button onclick="onClick()">ddd</button>
+
+<div style="background-color: red; width: 100px; height: 100px" id="cube"></div>
+
+<!--&lt;!&ndash; Insert these scripts at the bottom of the HTML, but before you use any Firebase services &ndash;&gt;-->
+<!--&lt;!&ndash; Firebase App (the core Firebase SDK) is always required and must be listed first &ndash;&gt;-->
+<!--<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>-->
+<!--&lt;!&ndash; If you enabled Analytics in your project, add the Firebase SDK for Analytics &ndash;&gt;-->
+<!--<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>-->
+<!--&lt;!&ndash; Add Firebase products that you want to use &ndash;&gt;-->
+<!--<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>-->
+<!--<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-firestore.js"></script>-->
+<!--<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>-->
+
+<!-- Add the entire Firebase JavaScript SDK -->
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase.js"></script>
+
+<script>
+// Your web app's Firebase configuration
+var firebaseConfig = {
+  apiKey: "AIzaSyDamXM0nOX581ncmNj72-ZVYwiqA3ynIJ8",
+  authDomain: "mytestproj-b735c.firebaseapp.com",
+  databaseURL: "https://mytestproj-b735c.firebaseio.com",
+  projectId: "mytestproj-b735c",
+  storageBucket: "mytestproj-b735c.appspot.com",
+  messagingSenderId: "778582361214",
+  appId: "1:778582361214:web:f07ac8ddfc87510b3a042f"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+</script>
+
+<script>
+
+window.onload = function () {
+  window.db = firebase.database();
+
+  //Выполняется когда пицца пришла
+  function pizzaPrishla(pizza) {
+    // тут ты эту пиццу ешь
+    console.log(pizza);
+  }
+
+  //задаем откуда заказываем пиццу
+  var dostavshik = db.ref('pizzeria');
+
+  //говорим доставщику выполнить pizzaPrishla, когда пицца будет готова
+  dostavshik.on('value', pizzaPrishla);
+
+  var poluchatel = db.ref('position');
+  poluchatel.on('value', function (snapshot) {
+    position = snapshot.val();
+
+    if (position) {
+      document.getElementById('cube').style.width = position.x+"px";
+      document.getElementById('cube').style.height = position.y+"px";
+      console.log(position.x);
+      console.log(position.y);
+    }
+  });
+};
+
+function onClick() {
+  db.ref('position').set(
+    {
+      x: document.getElementById("x").value,
+      y: document.getElementById("y").value
+    }
+  );
+}
+</script>
+</body>
+</html>

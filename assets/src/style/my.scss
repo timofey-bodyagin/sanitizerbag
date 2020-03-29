@@ -1,0 +1,345 @@
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.header, .footer {
+  background-color: $bg-dark;
+  color: $color-dark;
+}
+
+.main {
+  background-color: $bg-main;
+  color: $color-main;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 36px;
+  color: #001C61;
+}
+
+.col-text {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  color: #021239;
+  margin-top: 30px;
+}
+
+.buy-container {
+  margin-top: 37px;
+  display: flex;
+
+  .buy-button {
+    width: 152px;
+    height: 48px;
+    background: #F13454;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+    line-height: 48px;
+    text-align: center;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #FBFFFE;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #DC304D;
+    }
+  }
+
+  .buy-text {
+    margin-left: 16px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 48px;
+    color: #6087E7;
+  }
+}
+
+#s0 {
+  background-color: #ffffff;
+
+  .col {
+    height: 48px;
+  }
+
+  .left {
+    background: url("/img/s0/logo.svg") no-repeat left center;
+    padding-left: 35px;
+
+    .bold {
+      font-family: Poppins, sans-serif;
+      font-style: italic;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 48px;
+    }
+
+    .light {
+      font-family: 'PT Sans', serif;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 48px;
+    }
+  }
+}
+
+#s1 {
+  background-color: #001C61;
+
+  .left {
+    .wrapper {
+      margin-top: 100px;
+
+      .t1 {
+        font-family: Poppins, sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 22px;
+        color: #F5F8FF;
+      }
+
+      .t2 {
+        font-family: Poppins, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 119%;
+        color: white;
+
+        .yellow {
+          color: #FFF615;
+        }
+      }
+
+      .t3 {
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 25px;
+        color: #F5F8FF;
+        margin-top: 16px;
+      }
+
+      .t4 {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 30px;
+        color: #FBFFFE;
+
+        background: url("/img/s1/bug.svg") no-repeat left center;
+        padding-left: 40px;
+        margin-top: 65px;
+      }
+    }
+  }
+
+  .right {
+    height: 595px;
+    padding: 30px 0 20px 0;
+    position: relative;
+    display: flex;
+    background:
+            //url("/img/s1/product2.png") no-repeat 140px center,
+            //url("/img/s1/product1.png") no-repeat 76px center,
+            url("/img/s1/product_star.png") no-repeat right center,
+            url("/img/s1/bubbles.svg") no-repeat left bottom,
+            url("/img/s1/ellipses.svg") no-repeat center center;
+    background-size: auto;
+
+    .price-container {
+      position: relative;
+      overflow: hidden;
+
+      .price-text {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        left: 417px;
+        top: 88px;
+      }
+
+      .price {
+        margin-top: 30px;
+        font-family: Poppins, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 130%;
+        text-align: center;
+        color: #F13454;
+      }
+
+      .price-desc {
+        padding: 0 10px;
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 13px;
+        text-align: center;
+        color: #031D61;
+      }
+
+      img {
+        transform: translate(-50%, -50%);
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        //margin: -70px 0 0 140px;
+      }
+
+      //position: absolute;
+      //z-index: 10000;
+      //right: 0;
+      //top: 0;
+    }
+  }
+}
+
+#s2 {
+  padding: 45px 0 0 0;
+  display: flex;
+  flex-direction: column;
+
+  .row {
+    height: 385px;
+  }
+
+  .img1 {
+    background: url("/img/s2/group1.svg") no-repeat center center;
+  }
+
+  .img2 {
+    background: url("/img/s2/group2.svg") no-repeat center center;
+  }
+
+  .bg {
+    background: url("/img/s2/bg.svg") no-repeat center top;
+    background-size: 105%;
+    margin-top: 350px;
+
+    .container {
+      margin-top: -300px;
+
+      .img-container {
+        position: relative;
+
+        &:before {
+          content: ' ';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: url("/img/s2/play1.svg") no-repeat center center;
+          background-color: rgba(4, 25, 66, 0.62);
+          border-radius: 6px;
+
+          &:hover {
+            background: url("/img/s2/play2.svg") no-repeat center center;
+          }
+        }
+      }
+
+      .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        height: 0;
+
+        iframe {
+          border-radius: 6px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+#s3 {
+  background: #001C61;
+  padding: 130px 0 0 0;
+
+  h2 {
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    color: #FBFFFE;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .eq-height .item {
+    display: flex;
+    flex-direction: column;
+
+    .img-container {
+      background: #EBF6FF;
+      border-radius: 4px;
+      padding: 13px;
+      display: flex;
+      flex: auto;
+
+      img {
+        margin: auto;
+      }
+    }
+
+    .txt {
+      flex: none;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      color: #FFFFFF;
+
+      margin: 20px 0;
+      padding-left: 30px;
+      background: url("/img/s3/check.svg") no-repeat left center;
+    }
+  }
+
+  .bottom-bg-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 30%;
+    height: 0;
+    overflow: hidden;
+
+    .bottom-bg {
+      width: 105%;
+      height: 100%;
+      position: absolute;
+      left: -1%;
+      top: 0px;
+    }
+  }
+}
