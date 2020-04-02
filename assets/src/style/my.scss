@@ -110,7 +110,7 @@ h3 {
   }
 
   .left {
-    background: url("/img/s0/logo.svg") no-repeat left center;
+    background: url("assets/s0-logo.svg") no-repeat left center;
     padding-left: 35px;
 
     .bold {
@@ -135,7 +135,7 @@ h3 {
   background-color: #001C61;
 
   .container {
-    background: url("/img/s1/group_45.png") no-repeat right center;
+    background: url("assets/s1-group_45.png") no-repeat right center;
     background-size: auto;
     height: 100%;
     padding-top: 100px;
@@ -228,7 +228,7 @@ h3 {
         align-items: center;
         line-height: 18px;
 
-        background: url("/img/s1/bug.svg") no-repeat left center;
+        background: url("assets/s1-bug.svg") no-repeat left center;
         padding-left: 40px;
         margin-top: 65px;
       }
@@ -277,7 +277,7 @@ h3 {
   }
 
   .bg {
-    background: url("/img/s2/bg.svg") no-repeat center top;
+    background: url("assets/s2-bg.svg") no-repeat center top;
     background-size: 105%;
     margin-top: 350px;
 
@@ -292,12 +292,12 @@ h3 {
           position: absolute;
           width: 100%;
           height: 100%;
-          background: url("/img/s2/play1.svg") no-repeat center center;
+          background: url("assets/s2-play1.svg") no-repeat center center;
           background-color: rgba(4, 25, 66, 0.62);
           border-radius: 6px;
 
           &:hover {
-            background: url("/img/s2/play2.svg") no-repeat center center;
+            background: url("assets/s2-play2.svg") no-repeat center center;
           }
         }
       }
@@ -360,7 +360,7 @@ h3 {
 
       margin: 20px 0;
       padding-left: 30px;
-      background: url("/img/s3/check.svg") no-repeat left center;
+      background: url("assets/s3-check.svg") no-repeat left center;
     }
   }
 
@@ -392,7 +392,7 @@ h3 {
     height: 420px;
   }
 
-  background: url("/img/s8/bg.svg") no-repeat 75% top;
+  background: url("assets/s8-bg.svg") no-repeat 75% top;
   background-color: #f5fbff;
 
   .text-container {
@@ -448,7 +448,7 @@ h3 {
 
 #s10 {
   height: 80px;
-  background: url("/img/s10/bg.svg") no-repeat center top;
+  background: url("assets/s10-bg.svg") no-repeat center top;
   background-size: 100%;
   margin-top: -60px;
 }

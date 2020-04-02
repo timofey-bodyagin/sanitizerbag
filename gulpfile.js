@@ -5,22 +5,22 @@ var path = {
     build: {
         html: 'assets/build/',
         js: 'assets/build/js/',
-        css: 'assets/build/css/',
-        img: 'assets/build/img/',
+        css: 'assets/build/',
+        img: 'assets/build/assets/',
         fonts: 'assets/build/fonts/'
     },
     src: {
         html: 'assets/src/*.html',
         js: 'assets/src/js/main.js',
         style: 'assets/src/style/main.scss',
-        img: 'assets/src/img/**/*.*',
+        img: 'assets/src/img/*.*',
         fonts: 'assets/src/fonts/**/*.*'
     },
     watch: {
         html: 'assets/src/**/*.html',
         js: 'assets/src/js/**/*.js',
         css: 'assets/src/style/**/*.scss',
-        img: 'assets/src/img/**/*.*',
+        img: 'assets/src/*.*',
         fonts: 'assets/srs/fonts/**/*.*'
     },
     clean: './assets/build/*'
