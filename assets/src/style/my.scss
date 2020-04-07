@@ -531,4 +531,42 @@ h3 {
       line-height: 14px;
     }
   }
+
+  .text {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    vertical-align: center;
+    color: #6087E7;
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+  }
+
+  .includes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .buy-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: unset;
+    width: 100%;
+
+    @include sm {
+      margin-top: 20px;
+
+      button {
+        width: 100%;
+      }
+    }
+
+    a {
+      color: #6087E7;
+    }
+  }
 }
