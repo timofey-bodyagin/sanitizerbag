@@ -435,14 +435,13 @@ h3 {
     height: 420px;
   }
 
-  background: url("assets/s8-bg.svg") no-repeat 75% top;
+  background: url("assets/s8-bg.svg?123") no-repeat 75% top;
   background-color: #f5fbff;
 
   .text-container {
     margin-top: 133px;
     padding: 40px 46px 40px 32px;
-    background: #EDF7FF;
-    opacity: 0.75;
+    background-color: rgba(237, 247, 255, 0.75);
     border-radius: 8px;
     width: 478px;
 
