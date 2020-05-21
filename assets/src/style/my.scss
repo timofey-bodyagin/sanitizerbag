@@ -162,7 +162,7 @@ h3 {
           margin: auto;
           position: relative;
 
-          img {
+          img.bg {
             width: 380px;
             margin-left: -50px;
             margin-top: 50px;
@@ -245,7 +245,10 @@ h3 {
       top: 77px;
 
       .price {
-        margin-top: 43px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         font-family: Poppins, sans-serif;
         font-style: normal;
         font-weight: bold;
@@ -556,8 +559,27 @@ h3 {
   }
 
   .includes {
-    img {
-      width: 100%;
+    display: flex;
+    align-items: center;
+    img.bg {
+      width: 75%;
+    }
+    .price-text {
+      width: 25%;
+      position: relative;
+    }
+
+    .price {
+      position: absolute;
+      left: 50%;
+      top: 45%;
+      transform: translate(-50%, -50%);
+      font-family: Poppins, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 130%;
+      color: #F13454;
     }
   }
 
